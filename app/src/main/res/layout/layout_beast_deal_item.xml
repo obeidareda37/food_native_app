@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardElevation="@dimen/_10sdp"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/image_best_deal"/>
+
+    <View
+        android:background="@color/overlay_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/text_best_deal"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/brandon_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:text="@string/best_deals"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/brandon_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_address1"
+            android:hint="Enter your address"
+            android:fontFamily="@font/brandon_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/text_address_detail"
+        android:text="Your Address"
+        android:fontFamily="@font/brandon_medium"
+        android:textSize="@dimen/_16ssp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/brandon_medium1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_Comment1"
+            android:hint="Enter your comment"
+            android:fontFamily="@font/brandon_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:text="Delivery Method"
+        android:fontFamily="@font/brandon_medium"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:textColor="@color/dialog_header_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/rdi_home_address"
+            android:checked="true"
+            android:text="Home Address"
+            android:fontFamily="@font/brandon_medium"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="italic"
+            android:textColor="@color/dialog_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/rdi_other_address"
+            android:text="Other Address"
+            android:fontFamily="@font/brandon_medium"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="italic"
+            android:textColor="@color/dialog_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/rdi_this_address"-->
+<!--            android:checked="true"-->
+<!--            android:text="Ship to this  Address"-->
+<!--            android:fontFamily="@font/brandon_medium"-->
+<!--            android:textSize="@dimen/_18ssp"-->
+<!--            android:textStyle="italic"-->
+<!--            android:textColor="@color/dialog_text_color"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+    </RadioGroup>
+
+    <TextView
+        android:text="Payment Method"
+        android:fontFamily="@font/brandon_medium"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:textColor="@color/dialog_header_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/rdi_cod"
+            android:checked="true"
+            android:text="Cash on Delivery"
+            android:fontFamily="@font/brandon_medium"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="italic"
+            android:textColor="@color/dialog_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/rdi_braintree"
+            android:checked="true"
+            android:text="Razorpay"
+            android:fontFamily="@font/brandon_medium"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="italic"
+            android:textColor="@color/dialog_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RadioGroup>
+
+
+
+</LinearLayout>
